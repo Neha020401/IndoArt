@@ -1,0 +1,81 @@
+/* SocialResponsibility.css */
+.responsibility-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1100px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .responsibility-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .responsibility-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .responsibility-content {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .responsibility-content strong {
+    color: #0073e6;
+  }
+  
+  .responsibility-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .responsibility-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .responsibility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .responsibility-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .responsibility-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .responsibility-header h1 {
+      font-size: 2rem;
+    }
+  
+    .responsibility-card h2 {
+      font-size: 1.3rem;
+    }
+  
+    .responsibility-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
