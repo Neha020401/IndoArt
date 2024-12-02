@@ -6,6 +6,7 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 const SignUp = () => {
   const [formData, setFormData] = useState({
     name: "",
+    username:"",
     email: "",
     password: "",
     confirmPassword: "",
@@ -51,7 +52,8 @@ const SignUp = () => {
         !formData.confirmPassword ||
         !formData.phoneNo ||
         !formData.adhaarNo ||
-        !formData.panCardNo
+        !formData.panCardNo ||
+        !formData.username
       ) {
         setError("All fields are required!");
         return;
@@ -157,7 +159,17 @@ const SignUp = () => {
       {registerType === "artist" && (
         <form className="signup-form" onSubmit={handleSubmit}>
           {error && <p className="error-message">{error}</p>}
-
+          
+          <label htmlFor="userName">Create your UserName</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="MarieDairy"
+            value={formData.username}
+            onChange={handleChange}
+            className="signup-input"
+          />
           <label htmlFor="email">Email Address</label>
           <input
             type="email"
